@@ -1,0 +1,277 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="../home/home.css">
+    <link rel="stylesheet" href="./loginn.css">
+    <title>ZAREDT</title>
+</head>
+<!-- 
+─────────────────────────────────────────────────────────────────────────────
+─────────██████─██████████████─██████████████─██████──██████─██████████████──
+─────────██░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░██──██░░██─██░░░░░░░░░░██──
+─────────██░░██─██░░██████████─██░░██████████─██░░██──██░░██─██░░██████████──
+─────────██░░██─██░░██─────────██░░██─────────██░░██──██░░██─██░░██──────────
+─────────██░░██─██░░██████████─██░░██████████─██░░██──██░░██─██░░██████████──
+─────────██░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░██──██░░██─██░░░░░░░░░░██──
+─██████──██░░██─██░░██████████─██████████░░██─██░░██──██░░██─██████████░░██──
+─██░░██──██░░██─██░░██─────────────────██░░██─██░░██──██░░██─────────██░░██──
+─██░░██████░░██─██░░██████████─██████████░░██─██░░██████░░██─██████████░░██──
+─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██─██░░░░░░░░░░██──
+─██████████████─██████████████─██████████████─██████████████─██████████████──
+─────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────
+──────────────────────────────────████████──████████─────────────────────────
+──────────────────────────────────██░░░░██──██░░░░██─────────────────────────
+──────────────────────────────────████░░██──██░░████─────────────────────────
+────────────────────────────────────██░░░░██░░░░██───────────────────────────
+────────────────────────────────────████░░░░░░████───────────────────────────
+──────────────────────────────────────████░░████─────────────────────────────
+────────────────────────────────────────██░░██───────────────────────────────
+────────────────────────────────────────██░░██───────────────────────────────
+────────────────────────────────────────██░░██───────────────────────────────
+────────────────────────────────────────██░░██───────────────────────────────
+────────────────────────────────────────██████───────────────────────────────
+─────────────────────────────────────────────────────────────────────────────
+─────────────────────────────────────────────────────────────────────────────
+────────────────██████──────────██████─██████████████─████████──████████─────
+────────────────██░░██████████████░░██─██░░░░░░░░░░██─██░░░░██──██░░░░██─────
+────────────────██░░░░░░░░░░░░░░░░░░██─██░░██████████─████░░██──██░░████─────
+────────────────██░░██████░░██████░░██─██░░██───────────██░░░░██░░░░██───────
+────────────────██░░██──██░░██──██░░██─██░░██████████───████░░░░░░████───────
+────────────────██░░██──██░░██──██░░██─██░░░░░░░░░░██─────██░░░░░░██─────────
+────────────────██░░██──██████──██░░██─██░░██████████───████░░░░░░████───────
+────────────────██░░██──────────██░░██─██░░██───────────██░░░░██░░░░██───────
+────────────────██░░██──────────██░░██─██░░██████████─████░░██──██░░████─────
+────────────────██░░██──────────██░░██─██░░░░░░░░░░██─██░░░░██──██░░░░██─────
+────────────────██████──────────██████─██████████████─████████──████████─────
+─────────────────────────────────────────────────────────────────────────────
+ -->
+
+<body>
+    <div class="" id="black--b"></div>
+    <!-- carrito de compra----------------------------------------------------------------------- -->
+    <div class="cont-car cont-car__aparecer" id="cont__car-a">
+        <div class="cont-car__back">
+            <div class="cont-car__back__cont">
+                <div class="cont-car__name"><p>Compras</p></div>
+                <div class="cont-car__ex"><img src="../home/pictures/ex.png" alt="" onclick="desactivarcar()"></div>
+            </div>
+        </div>
+    </div>
+    <!-- buscador-------------------------------------------------------------------------------- -->
+    <div class="cont-search" id="search-cont">
+        <div class="cont-search__back">
+                <div class="exx"><img src="../home/pictures/ex.png" alt="" onclick="desactivarsearch()"></div>
+                <input class="cont-search__back__input" id="cont-search--animate" placeholder="¿Qúe desea buscar?">
+        </div>
+    </div>
+    <!-- like------------------------------------------------------------------------------------ -->
+    <div class="cont-like" id="like-cont">
+
+        <div class="cont-like__template">
+
+            <div class="cont-like__cont-sky">
+
+                <div class="cont-like__both-letters"><p>Destacados</p></div>
+                <div class="cont-like__both-close"><img src="../home/pictures/ex.png" alt="x" id="ex" onclick="desactivarlike()"></div>
+                
+            </div>
+            <!-- contenedored products -->
+            <div class="cont-like__cont-products">
+                <div class="cont-like__cont-products__like">
+                    <!-- contenedor img -->
+                    <div class="cont-like__cont-products-img"></div>
+                    <!-- contenedor info -->
+                    <div class="cont-like__cont-products-txt">
+                        <!-- descripcion -->
+                        <div class="cont-like__cont-products-text-above">
+                            <p>Sudadera Stretch Para Hombre Moda Con Capucha Hoodie Basico</p>
+                        </div>
+                        <!-- abajo -->
+                        <div class="cont-like__cont-products-text-down">
+                            <p>$300.00 <span>MX</span></p>
+                        </div>
+                    </div>
+                    <!-- contenedor like -->
+                    <div class="cont-like__cont-products-like">
+                        <div class="cont-like__cont-products-like__cicle">
+                            <div class="heart"><p class="heart--cor">&#10084;</p></div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- -------------------------------------------------------------------------------- -->
+                <div class="cont-like__cont-products__like">
+                    <!-- contenedor img -->
+                    <div class="cont-like__cont-products-img"></div>
+                    <!-- contenedor info -->
+                    <div class="cont-like__cont-products-txt">
+                        <!-- descripcion -->
+                        <div class="cont-like__cont-products-text-above">
+                            <p>Sudadera Stretch Para Hombre Moda Con Capucha Hoodie Basico</p>
+                        </div>
+                        <!-- abajo -->
+                        <div class="cont-like__cont-products-text-down">
+                            <p>$300.00 <span>MX</span></p>
+                        </div>
+                    </div>
+                    <!-- contenedor like -->
+                    <div class="cont-like__cont-products-like">
+                        <div class="cont-like__cont-products-like__cicle">
+                            <div class="heart"><p class="heart--cor">&#10084;</p></div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- -------------------------------------------------------------------------------- -->
+                <div class="cont-like__cont-products__like">
+                    <!-- contenedor img -->
+                    <div class="cont-like__cont-products-img"></div>
+                    <!-- contenedor info -->
+                    <div class="cont-like__cont-products-txt">
+                        <!-- descripcion -->
+                        <div class="cont-like__cont-products-text-above">
+                            <p>Sudadera Stretch Para Hombre Moda Con Capucha Hoodie Basico</p>
+                        </div>
+                        <!-- abajo -->
+                        <div class="cont-like__cont-products-text-down">
+                            <p>$300.00 <span>MX</span></p>
+                        </div>
+                    </div>
+                    <!-- contenedor like -->
+                    <div class="cont-like__cont-products-like">
+                        <div class="cont-like__cont-products-like__cicle">
+                            <div class="heart"><p class="heart--cor">&#10084;</p></div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- -------------------------------------------------------------------------------- -->
+                <div class="cont-like__cont-products__like">
+                    <!-- contenedor img -->
+                    <div class="cont-like__cont-products-img"></div>
+                    <!-- contenedor info -->
+                    <div class="cont-like__cont-products-txt">
+                        <!-- descripcion -->
+                        <div class="cont-like__cont-products-text-above">
+                            <p>Sudadera Stretch Para Hombre Moda Con Capucha Hoodie Basico</p>
+                        </div>
+                        <!-- abajo -->
+                        <div class="cont-like__cont-products-text-down">
+                            <p>$300.00 <span>MX</span></p>
+                        </div>
+                    </div>
+                    <!-- contenedor like -->
+                    <div class="cont-like__cont-products-like">
+                        <div class="cont-like__cont-products-like__cicle">
+                            <div class="heart"><p class="heart--cor">&#10084;</p></div>
+                        </div>
+                    </div> 
+                </div>
+                <!-- -------------------------------------------------------------------------------- -->
+                <div class="cont-like__cont-products__like">
+                    <!-- contenedor img -->
+                    <div class="cont-like__cont-products-img"></div>
+                    <!-- contenedor info -->
+                    <div class="cont-like__cont-products-txt">
+                        <!-- descripcion -->
+                        <div class="cont-like__cont-products-text-above">
+                            <p>Sudadera Stretch Para Hombre Moda Con Capucha Hoodie Basico</p>
+                        </div>
+                        <!-- abajo -->
+                        <div class="cont-like__cont-products-text-down">
+                            <p>$300.00 <span>MX</span></p>
+                        </div>
+                    </div>
+                    <!-- contenedor like -->
+                    <div class="cont-like__cont-products-like">
+                        <div class="cont-like__cont-products-like__cicle">
+                            <div class="heart"><p class="heart--cor">&#10084;</p></div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- like------------------------------------------------------------------------------------ -->
+
+    <div class="nav" id="miDiv">
+            <div class="ex"><img src="../home/pictures/ex.png" alt="" onclick="desactivarDiv()"></div>
+            <div class="cont-nav">
+                <nav class="nav__nav">
+                    <ul class="nav__ul">
+                        <li class="nav__li" id="nav__li--perfil"><a href="#" class="nav__icon nav__icon-loo"><img src="../home/pictures/nav/perfil.svg">PERFIL</a></li>
+                        <li class="nav__li" id="nav__li--novedades"><a href="#" class="nav__icon nav__icon-loo"><img src="../home/pictures/nav/Novedades.svg">NOVEDADES</a></li>
+                        <li class="nav__li" id="nav__li--coleccion"><a href="#" class="nav__icon nav__icon-loo"><img src="../home/pictures/nav/coleccion.svg">COLECCION</a></li>
+                        <li class="nav__li" id="nav__li--tendencia"><a href="#" class="nav__icon nav__icon-loo"><img src="../home/pictures/nav/tendencias.svg"> TENDENCIA</a></li>
+                        <li class="nav__li" id="nav__li--rebajas"><a href="#" class="nav__icon nav__icon-loo"><img src="../home/pictures/nav/rebajas.svg"> REBAJAS</a></li>
+                        <li class="nav__li" id="nav__li--estilos"><a href="#" class="nav__icon"><img src="../home/pictures/nav/estilos.svg"> ESTILOS</a></li>
+                        <li class="nav__li" id="nav__li--conjuntos"><a href="#" class="nav__icon nav__icon-lop"><img src="../home/pictures/nav/conjuntos.svg"> CONJUNTOS</a></li>
+                        <li class="nav__li" id="nav__li--mujer"><a href="#" class="nav__icon nav__icon-lop"><img src="../home/pictures/nav/mujer.svg"> MUJER</a></li>
+                        <li class="nav__li" id="nav__li--hombre"><a href="#" class="nav__icon nav__icon-lop"><img src="../home/pictures/nav/hombre.svg"> HOMBRE</a></li>
+                        <li class="nav__li" id="nav__li--niños"><a href="#" class="nav__icon nav__icon-lop"><img src="../home/pictures/nav/niños.svg"> NIÑOS</a></li>
+                        <li class="nav__li" id="nav__li--deportes"><a href="#" class="nav__icon nav__icon-lop"><img src="../home/pictures/nav/deportes.svg"> DEPORTES</a></li>
+                        <li class="nav__li" id="nav__li--maquillaje"><a href="#" class="nav__icon nav__icon-lop"><img src="../home/pictures/nav/maquillaje.svg"> MAQUILLAJE</a></li>
+                        <li class="nav__li" id="nav__li--accesorios"><a href="#" class="nav__icon nav__icon-lop"><img src="../home/pictures/nav/accesorios.svg"> ACCESORIOS</a></li>
+                    </ul>
+                </nav>
+                <div class="ing-reg" id="ing-reganim">
+                    <div class="ing-reg__registro ing-reg__dis"><a href="../sign-up/sing-up.html">CREAR CUENTA</a></div>
+                </div>
+            </div>
+    </div>
+        <div class="login-back" id="login_i">
+            <div class="login-back__is">
+                <P>INICIAR SESIÓN</P>
+            </div>
+            <div class="login-back__camp eml">
+                <input type="email">
+            </div>
+            <div class="login-back__camp psw">
+                <input type="password">
+            </div>
+            <div class="login-back__button">
+                <button class="inicioo">Iniciar Sesión</button>
+            </div>
+            <div class="login-back__forget">
+                <a href="#">¿Has olvidado la contraseña?</a>
+            </div>
+            <div class="login-back__buttoon cuenta">
+                <a href="../sign-up/sing-up.html" class="link-cuenta">Crear Cuenta</a>
+            </div>
+        </div>
+    <div>
+        <header class="header">
+            <div class="header__logo">
+                <a href="../home/home.html" class="header__name">ZAREDT</a>
+            </div>
+
+            <div class="header__retorn">
+                <div class="header__hamburgesa" onclick="toggleDiv()" id="header__hambur">
+                   <img src="./Login-pictures/hamburgesa.svg" alt="menu" class="hamburgesa__main">
+                </div>
+
+                <div class="header__componentes">
+
+                    <div class="header__componentes-img">
+                        <img src="./Login-pictures/fav.svg" alt="favorite" class="header__comp" onclick="activarlike()">
+                    </div>
+                                                                <!-- animate-search -->
+                    <div class="header__componentes-img animate-search" id="sear">
+                        <img src="./Login-pictures/search.svg" alt="search" class="header__comp" onclick="activarsearch(), inpanimation()">
+                    </div>
+                                        
+                    <div class="header__componentes-img">
+                        <img src="./Login-pictures/bag.svg" alt="bag" class="header__comp" onclick="activarcar()">
+                    </div>
+                </div>
+            </div> 
+        </header>
+    </div>
+
+<script src="../home/home.js"></script>
+<script src="./login.js"></script>
+</body>
+</html> 

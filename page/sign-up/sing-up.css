@@ -1,0 +1,156 @@
+body{
+    background-image: url(./sign-up-pictures/WALL\ PAPER.jpg);
+}
+
+.login-back{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 70px;
+    left: -100%;
+    z-index: 1;
+    width: 80vw;
+    height: 90vh;
+    border-radius: 10px;
+    background:rgba(36, 35, 35, 0.3);
+    backdrop-filter: blur( 6px );
+    border: 1px solid rgba(255, 255, 255, 0.192);
+    transition: left .8s;
+}
+
+.login-back-anim{
+    left: 10%;
+}
+
+.login-back__is{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.login-back__camp{
+    width: 80%;
+    height: 45px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 32px 0 rgb(109, 103, 103);
+    border: 2px solid #ffffff41;
+    border-radius: 5px;
+}
+
+.login-back__camp input{
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background:rgba(36, 35, 35, 0.3);
+    backdrop-filter: blur( 1px );
+}
+
+.login-back__button{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+}
+.login-back__button button{
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 110%;
+    width: 100%;
+    height: 100%;
+    margin-top: 25px;
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.eml::after{
+    content: 'E-mail:';
+    position: relative;
+    bottom: 62px;
+    background-color: none;
+    color: white;
+}
+
+.psw::after{
+    content: 'Password:';
+    position: relative;
+    bottom: 62px;
+    background-color: none;
+    color: white;
+}
+
+.apod::after{
+    content: 'Apodo:';
+    position: relative;
+    bottom: 62px;
+    background-color: none;
+    color: white;
+}
+
+.nom::after{
+    content: 'Nombre:';
+    position: relative;
+    bottom: 62px;
+    background-color: none;
+    color: white;
+}
+
+.re-psw::after{
+    content: 'Confirmar Password:';
+    position: relative;
+    bottom: 62px;
+    background-color: none;
+    color: white;
+}
+
+.login-back__forget{
+    text-align: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 30px;
+}
+
+.login-back__forget a{
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+}
+
+.cuenta{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-back__button .cuenta-button{
+    background-color: rgba(224, 222, 222, 0.897);
+    font-size: 14px;
+    margin-top: 70px;
+    width: 62%;
+}
+
+.login-back__buttoon{
+    border-radius: 5px;
+    margin-top: 45px;
+    display: flex;
+    align-items: center;
+    width: 65%;
+    height: 45px;
+    background-color: rgb(255, 255, 255)
+}
+
+.link-cuenta{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
